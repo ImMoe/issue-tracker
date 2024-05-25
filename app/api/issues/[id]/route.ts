@@ -1,6 +1,6 @@
-import { NextRequest, NextResponse } from 'next/server';
 import { issueSchema } from '@/app/validationSchemas';
 import prisma from '@/prisma/client';
+import { NextRequest, NextResponse } from 'next/server';
 
 export async function PATCH(
   request: NextRequest,
