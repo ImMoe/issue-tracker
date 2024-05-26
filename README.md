@@ -1,34 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Issue Tracker
 
-## Getting Started
+Issue Tracker is a web application designed to help teams manage and track issues or tasks efficiently. Built with the latest technologies, this project leverages the power of Next.js 13, Prisma, Typescript and Tailwind CSS to deliver a robust, scalable, and aesthetically pleasing user experience.
 
-First, run the development server:
+## Features
+
+- Real-time Issue Tracking: Easily create, update, and track issues in real-time.
+- User Management: Assign issues to different team members.
+- Sort and Filter: Quickly find issues using sorting and filtering options.
+- Responsive Design: Optimized for both desktop and mobile devices with Tailwind CSS and Radix UI.
+- Database Integration: Seamless data handling with Prisma and support for multiple database systems.
+
+## Tech Stack
+
+**Next.js 13**:
+Utilizes the latest features of Next.js for server-side rendering and static site generation.
+
+**Prisma**: A next-generation ORM for database interaction, ensuring type-safe database access.
+
+**Tailwind CSS**:
+A utility-first CSS framework for rapidly building custom user interfaces.
+
+**Typescript** Type safety for robust and maintainable code.
+
+## Installation
+
+Install my-project with npm
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+  git clone https://github.com/your-username/issue-tracker.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```bash
+  cd issue-tracker
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Rename .env-example to .env and update the variables
 
-## Learn More
+```bash
+  DATABASE_URL=""
+  NEXTAUTH_URL="http://localhost:3000"
+  NEXTAUTH_SECRET=""
+  GOOGLE_CLIENT_ID=""
+  GOOGLE_CLIENT_SECRET=""
+```
 
-To learn more about Next.js, take a look at the following resources:
+Run database migrations
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+  npx prisma migrate dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Finally, start the development server:
 
-## Deploy on Vercel
+```bash
+  npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Screenshots
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![App Screenshot](https://snipboard.io/6mVhXt.jpg)
+
+![App Screenshot](https://snipboard.io/lasmbW.jpg)
+
+![App Screenshot](https://snipboard.io/pPMOTI.jpg)
